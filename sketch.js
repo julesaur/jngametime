@@ -13,6 +13,7 @@ function setup() {
 
   textFont("Fredericka the Great");
 
+
   player = new Player();
 
   coin = new Coin();

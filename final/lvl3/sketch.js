@@ -13,20 +13,21 @@ let posY = 0;
 
 
 function preload() {
-  song = loadSound('lazywalk.mp3');
-  bg = loadImage("airplane.png");
-  frenchie2 = loadImage("sleepydog.png");
-  zzz = loadImage("zzz.png");
-  dream = loadImage("dreambubble.png");
-  time = loadImage("time.png");
-  express = loadImage("express.png")
-  vespa = loadImage("vespa.png")
+  song = loadSound("assets/lazywalk.mp3");
+  bg = loadImage("assets/airplane.png");
+  frenchie2 = loadImage("assets/sleepydog.png");
+  zzz = loadImage("assets/zzz.png");
+  dream = loadImage("assets/dreambubble.png");
+  time = loadImage("assets/time.png");
+  express = loadImage("assets/express.png")
+  vespa = loadImage("assets/vespa.png")
 
 }
 
 function setup() {
   createCanvas(1000, 500);
   textFont("Fredericka the Great");
+  song.loop();
 }
 
 function draw() {

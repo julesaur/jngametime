@@ -15,16 +15,16 @@ let sunglasses;
 let posX = 0;
 let posY = 0;
 
-
+let button;
 
 
 function preload(){
 
-     cloud = loadImage("cloudin.png");
-     frenchie = loadImage("frenchie.png");
-     sf = loadImage("sf.png")
-     hat = loadImage("hat.png")
-     sunglasses = loadImage("sunglasses.png")
+     cloud = loadImage("assets/cloudin.png");
+     frenchie = loadImage("assets/frenchie.png");
+     sf = loadImage("assets/sf.png")
+     hat = loadImage("assets/hat.png")
+     sunglasses = loadImage("assets/sunglasses.png")
 
 
 }
@@ -69,7 +69,8 @@ function title() {
 
 
   textSize(30);
-  text('click anywhere to start', w/2, h/2);
+
+  text('click here to start', w/2, h/2);
 }
 
 function titleMouseClicked(){
@@ -81,9 +82,11 @@ function titleMouseClicked(){
 
 function level1() {
   background(53,70,57);
+  textSize(18);
+  text('San Francisco, 58°F, 11:22 AM', posX, 210, 410);
   image(cloud, posX, 10, 400, 200);
- image(frenchie, posX, 400, 100, 100);
- image(sf, 500, 203, 300, 300);
+  image(frenchie, posX, 400, 100, 100);
+  image(sf, 500, 203, 300, 300);
 
    posX += 1;
    posY += 1;
@@ -93,11 +96,10 @@ function level1() {
    fill(255)
    textSize(20);
    text('You take a pit stop at a souvenir shop in SF, which of the two items would you buy?', w/2, h/5);
-
    image(hat, 150, 40, 300, 400);
    text('Hat', 270, 410);
    image(sunglasses, 530, 220, 300, 100);
-text('Sunglasses', 710, 410);
+   text('Sunglasses', 710, 410);
 
 
 

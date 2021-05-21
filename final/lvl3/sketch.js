@@ -37,10 +37,10 @@ function draw() {
 
 
 
-  }
+}
 
 
-  function lvl1() {
+function lvl1() {
 
   image(bg, 1, 1, 1000, 500);
   image(frenchie2, 530, 300, 300, 200);
@@ -48,8 +48,8 @@ function draw() {
   image(dream, 300, 40, 300, 300);
   image(time, posX, 450, 60, 50);
 
-    posX += 1;
-    posY += 1;
+  posX += 1;
+  posY += 1;
 
   if (posX > 1000) {
     background(53, 70, 57);
@@ -61,8 +61,8 @@ function draw() {
     image(express, 150, 180, 300, 200);
     text('Metro', 280, 410);
     image(vespa, 530, 180, 300, 200);
-  text('Vespa', 660, 410);
+    text('Vespa', 660, 410);
 
-}
+  }
 
 }

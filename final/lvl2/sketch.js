@@ -30,9 +30,9 @@ function draw() {
 
 
 
-  }
+}
 
-function mousePressed(){
+function mousePressed() {
 
   hat.clicked();
 
@@ -41,26 +41,26 @@ function mousePressed(){
 function title() {
 
 
-  background(53,70,57);
+  background(53, 70, 57);
   textSize(80);
   fill(255);
   textAlign(CENTER);
-  text('Off to Paris', w/2, h/5);
+  text('Off to Paris', w / 2, h / 5);
 
 
   textSize(30);
-  text('click anywhere to start', w/2, h/2);
+  text('click anywhere to start', w / 2, h / 2);
 }
 
-function titleMouseClicked(){
-    console.log('canvas is clicked on title page');
-    state = 'level 1'
+function titleMouseClicked() {
+  console.log('canvas is clicked on title page');
+  state = 'level 1'
 
 }
 
 
 
-  function lvl1() {
+function lvl1() {
   fill(255)
   textSize(18);
   text('New York, 63°F, 3:54 AM', posX, 210, 410);
@@ -71,8 +71,8 @@ function titleMouseClicked(){
 
 
 
-    posX += 1;
-    posY += 1;
+  posX += 1;
+  posY += 1;
 
   if (posX > 500) {
     background(53, 70, 57);
@@ -86,15 +86,7 @@ function titleMouseClicked(){
     image(ice, 550, 160, 300, 200);
     text('Italian Ice', 660, 400);
 
-}
+  }
 
-
-  function lvl2(){
-  image(night, posX, 10, 500, 200);
-  image(frenchie, posX, 400, 100, 100);
-
-
-
-    }
 
 }
